@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Tiny boolean parser utility",
   "license": "MIT",
-
   "author": "CloudTheWolf",
   "homepage": "https://github.com/CloudTheWolf/yet-another-parse-bool#readme",
   "repository": {
@@ -13,7 +12,9 @@
   "bugs": {
     "url": "https://github.com/CloudTheWolf/yet-another-parse-bool/issues"
   },
-
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "boolean",
     "bool",
@@ -26,10 +27,8 @@
     "esm",
     "cjs"
   ],
-
   "type": "module",
   "sideEffects": false,
-
   "files": [
     "index.js",
     "index.cjs",
@@ -37,7 +36,6 @@
     "README.md",
     "LICENSE"
   ],
-
   "exports": {
     ".": {
       "types": "./index.d.ts",
@@ -45,12 +43,11 @@
       "require": "./index.cjs"
     }
   },
-
   "main": "./index.cjs",
   "module": "./index.js",
   "types": "./index.d.ts",
-
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "yarn@4.12.0"
 }
