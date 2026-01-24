@@ -21,15 +21,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          registry-url: "https://registry.npmjs.org"
+      
+      - name: Set npm registry
+        run: npm config set registry https://registry.npmjs.org/
+        
+      - name: Ensure no npm token auth is present
+        run: |
+          echo "Checking for injected npm auth..."
+          npm config delete //registry.npmjs.org/:_authToken || true
+          rm -f ~/.npmrc || true
+          rm -f "$NPM_CONFIG_USERCONFIG" || true
+          rm -f /home/runner/work/_temp/.npmrc || true
+          npm config list
 
       - name: Install
         run: npm install
-
-      - name: Remove npm token config (force OIDC)
-        run: |
-          rm -f "$NPM_CONFIG_USERCONFIG"
-          rm -f /home/runner/work/_temp/.npmrc || true
           
       - name: Publish
         run: npm publish --access public --provenance
