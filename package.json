@@ -1,0 +1,56 @@
+{
+  "name": "parse-bool",
+  "version": "1.0.0",
+  "description": "Tiny boolean parser utility",
+  "license": "MIT",
+
+  "author": "CloudTheWolf",
+  "homepage": "https://github.com/CloudTheWolf/parse-bool#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudTheWolf/parse-bool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CloudTheWolf/parse-bool/issues"
+  },
+
+  "keywords": [
+    "boolean",
+    "bool",
+    "parse",
+    "parser",
+    "env",
+    "vite",
+    "node",
+    "bun",
+    "esm",
+    "cjs"
+  ],
+
+  "type": "module",
+  "sideEffects": false,
+
+  "files": [
+    "index.js",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+
+  "engines": {
+    "node": ">=18"
+  }
+}
