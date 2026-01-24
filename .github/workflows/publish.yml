@@ -25,6 +25,10 @@ jobs:
 
       - name: Install
         run: npm install
-
+      - name: Debug npm config
+        run: |
+          npm config list
+          npm whoami || true
+          
       - name: Publish
         run: npm publish --access public --provenance
