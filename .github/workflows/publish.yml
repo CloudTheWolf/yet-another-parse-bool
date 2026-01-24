@@ -25,11 +25,11 @@ jobs:
 
       - name: Install
         run: npm install
-        
-      - name: Debug npm config
+
+      - name: Remove npm token config (force OIDC)
         run: |
-          npm config list
-          npm whoami || true
+          rm -f "$NPM_CONFIG_USERCONFIG"
+          rm -f /home/runner/work/_temp/.npmrc || true
           
       - name: Publish
         run: npm publish --access public --provenance
