@@ -1,5 +1,4 @@
-name: Publish to npm (Trusted Publishing)
-
+name: Publish to npm
 on:
   push:
     tags:
