@@ -25,6 +25,7 @@ jobs:
 
       - name: Install
         run: npm install
+        
       - name: Debug npm config
         run: |
           npm config list
