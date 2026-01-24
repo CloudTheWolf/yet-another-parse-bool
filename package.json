@@ -1,17 +1,17 @@
 {
-  "name": "parse-bool",
+  "name": "yet-another-parse-bool",
   "version": "1.0.0",
   "description": "Tiny boolean parser utility",
   "license": "MIT",
 
   "author": "CloudTheWolf",
-  "homepage": "https://github.com/CloudTheWolf/parse-bool#readme",
+  "homepage": "https://github.com/CloudTheWolf/yet-another-parse-bool#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CloudTheWolf/parse-bool.git"
+    "url": "git+https://github.com/CloudTheWolf/yet-another-parse-bool.git"
   },
   "bugs": {
-    "url": "https://github.com/CloudTheWolf/parse-bool/issues"
+    "url": "https://github.com/CloudTheWolf/yet-another-parse-bool/issues"
   },
 
   "keywords": [
