@@ -29,11 +29,11 @@ parseBool(undefined);     // false
 parseBool({});            // false
 ```
 
-### CommonJS (Node require)
+### CommonJS (Node required)
 
 ```js 
 const parseBool = require("yet-another-parse-bool");
-// or: const { parseBool } = require("yet-another-parse-bool";
+// or: const { parseBool } = require("yet-another-parse-bool");
 
 parseBool(true);          // true
 parseBool(false);         // false
